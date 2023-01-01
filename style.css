@@ -1,0 +1,28 @@
+:root{
+    /*fonts*/
+    --overpass: 'Overpass', sans-serif;
+    --ubuntu: 'Ubuntu', sans-serif;
+
+    /*primary colors*/
+    --primary: hsl(356, 100%, 66%);
+    --primary-light: hsl(355, 100%, 74%);
+    --primary-dark: hsl(208, 49%, 24%);
+    /*neutral colors*/
+    --white: hsl(0, 0%, 100%);
+    --gray: hsl(240, 2%, 79%);
+    --dark-gray: hsl(207, 13%, 34%);
+    --dark-blue: hsl(240, 10%, 16%);
+    /*gradient colors*/
+    --gradient-light: hsl(13, 100%, 72%);
+    --gradient-dark: hsl(353, 100%, 62%);
+    /*background gradient colors*/
+    --gradient-bg-verydark: hsl(237, 17%, 21%);
+    --gradient-bg-dark: hsl(237, 23%, 32%);
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 1px "hack"*/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
