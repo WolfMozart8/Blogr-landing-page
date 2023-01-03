@@ -24,14 +24,18 @@
   </style>
 </head>
 <body>
-  <header class="header">
+  <header class="header container">
   <nav class="nav">
     <div class="sections">
-      <div class="logo">Logo</div>
+      <div class="logo"><img src="./images/logo.svg" alt="Logo"></div>
       <div class="links">
-        <div class="links__product">
-          <p class="links__product__title">Product</p>
-          <ul class="links__product__list">
+        <div class="links__main">
+          <p class="links__title">Product 
+        </p>
+        <span class="menu-icon">
+          <img src="./images/icon-arrow-light.svg" alt="menu-icon">
+        </span>
+          <ul class="links__list">
             <li><a href="#">Overview</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Marketplace</a></li>
@@ -39,18 +43,26 @@
             <li><a href="#">Integrations</a></li>
           </ul>
         </div>
-        <div class="links__company">
-          <p class="links__company__title">Company</p>
-          <ul class="links__company__list">
+        <div class="links__main">
+          <p class="links__title">Company 
+        </p>
+        <span class="menu-icon">
+          <img src="./images/icon-arrow-light.svg" alt="menu-icon">
+        </span>
+          <ul class="links__list">
             <li><a href="#">About</a></li>
             <li><a href="#">Team</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Careers</a></li>
           </ul>
         </div>
-        <div class="links__connect">
-          <p class="links__connect__title">Connect</p>
-          <ul class="links__connect__list">
+        <div class="links__main">
+          <p class="links__title">Connect 
+        </p>
+        <span class="menu-icon">
+          <img src="./images/icon-arrow-light.svg" alt="menu-icon">
+        </span>
+          <ul class="links__list">
             <li><a href="#">Contact</a></li>
             <li><a href="#">Newsletter</a></li>
             <li><a href="#">LinkedIn</a></li>
@@ -60,11 +72,11 @@
     </div>
 
     <div class="join-us">
-      <div class="join-us__login">
-        <a href="#" class="button button--no-bg">Login</a>
+      <div class="button__div button--no-bg">
+        <a href="#">Login</a>
       </div>
-      <div class="join-us__sign-up">
-        <a href="#" class="button button--white-bg">Sign Up</a>
+      <div class="button__div button--white-bg">
+        <a href="#">Sign Up</a>
       </div>
     </div>
   </nav>
@@ -79,37 +91,44 @@
       <p>Grow your audience and build your online brand</p>
     </div>
     <div class="header__main__buttons">
-      <a href="#" class="button button--white-bg">Start for Free</a>
-      <a href="#" class="button button--outline">Learn More</a>
+      <div class="button__div button--white-bg"><a href="#">Start for Free</a></div>
+      <div class="button__div button--outline"><a href="#">Learn More</a></div>
     </div>
   </div>
 </header>
 
 <main>
-  <div class="container-big">
-    <div class="container-big__title"><h1>Designed for the future</h1></div>
+  <div class="container-big container">
+    <div class="container-big__title"><h2>Designed for the future</h2></div>
     <div class="container-big__section">
-      <div class="container-big__img"></div>
+
       <div class="container-big__text">
-        <h2>Introducing an extensible editor</h2>
-        <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+      <div>
+        <h3>Introducing an extensible editor</h3>
+        <p class="p-text">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
           The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
           videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
           change the looks of a blog.</p>
       </div>
-      <div class="container-big__text">
-        <h2>Robust content management</h2>
-        <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+      <div>
+        <h3>Robust content management</h3>
+        <p class="p-text">Flexible content management enables users to easily move through posts. Increase the usability of your blog 
           by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
       </div>
     </div>
+    <div class="container-big__img">
+      <img src="./images/illustration-editor-desktop.svg" alt="editor image">
+    </div>
+    </div>
   </div>
 
-  <div class="container-small">
-    <div class="container-small__img"></div>
+  <div class="container-small container">
+    <div class="container-small__img">
+      <img src="./images/illustration-phones.svg" alt="phones image">
+    </div> 
     <div class="container-small__text">
       <h2>State of the Art Infrastructure</h2>
-      <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+      <p class="p-text">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
         This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
     </div>
   </div>
@@ -119,13 +138,13 @@
       <div class="container-big__img"></div>
       <div class="container-big__text">
         <h2>Free, open, simple</h2>
-        <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+        <p class="p-text">Blogr is a free and open source application backed by a large community of helpful developers. It supports 
           features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
           and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
       </div>
       <div class="container-big__text">
         <h2>Powerful tooling</h2>
-        <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+        <p class="p-text">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
           capable of producing even the most complicated sites.</p>
       </div>
     </div>
