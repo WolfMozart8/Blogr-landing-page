@@ -18,9 +18,7 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
-    header ul {
-      display: none;
-    }
+
   </style>
 </head>
 <body>
@@ -73,10 +71,10 @@
 
     <div class="join-us">
       <div class="button__div button--no-bg">
-        <a href="#">Login</a>
+        <a class="a-link" href="#">Login</a>
       </div>
       <div class="button__div button--white-bg">
-        <a href="#">Sign Up</a>
+        <a class="a-link" href="#">Sign Up</a>
       </div>
     </div>
   </nav>
@@ -91,8 +89,8 @@
       <p>Grow your audience and build your online brand</p>
     </div>
     <div class="header__main__buttons">
-      <div class="button__div button--white-bg"><a href="#">Start for Free</a></div>
-      <div class="button__div button--outline"><a href="#">Learn More</a></div>
+      <div class="button__div button--white-bg"><a class="a-link" href="#">Start for Free</a></div>
+      <div class="button__div button--outline"><a class="a-link" href="#">Learn More</a></div>
     </div>
   </div>
 </header>
@@ -133,29 +131,36 @@
     </div>
   </div>
 
-  <div class="container-big">
+  <div class="container-big container">
     <div class="container-big__section">
-      <div class="container-big__img"></div>
-      <div class="container-big__text">
-        <h2>Free, open, simple</h2>
+      <div class="container-big__img img-laptop-div">
+        <img class="img-laptop" src="./images/illustration-laptop-desktop.svg" alt="laptop image">
+      </div>
+      <div class="container-big__text section-3">
+        <div>
+        <h3>Free, open, simple</h3>
         <p class="p-text">Blogr is a free and open source application backed by a large community of helpful developers. It supports 
           features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
           and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
       </div>
-      <div class="container-big__text">
-        <h2>Powerful tooling</h2>
+    
+    <div>
+        <h3>Powerful tooling</h3>
         <p class="p-text">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-          capable of producing even the most complicated sites.</p>
-      </div>
+        capable of producing even the most complicated sites.</p>
     </div>
+  </div>
+  </div>
   </div>
 </main>
 
 
 <footer>
-  <div class="footere__logo"></div>
+    <div class="logo"><img src="./images/logo.svg" alt="Logo"></div>
+    <div class="footer-links">
   <div class="footer__product">
-    <ul class="footer-links">
+    <p>Product</p>
+    <ul>
       <li><a href="#">Overview</a></li>
       <li><a href="#">Pricing</a></li>
       <li><a href="#">Marketplace</a></li>
@@ -164,7 +169,8 @@
     </ul>
   </div>
   <div class="footer__company">
-    <ul class="footer-links">
+    <p>Company</p>
+    <ul>
       <li><a href="#">About</a></li>
       <li><a href="#">Team</a></li>
       <li><a href="#">Blog</a></li>
@@ -172,17 +178,19 @@
     </ul>
   </div>
   <div class="footer__connect">
-    <ul class="footer-links">
+    <p>Connect</p>
+    <ul>
       <li><a href="#">Contact</a></li>
       <li><a href="#">Newsletter</a></li>
       <li><a href="#">LinkedIn</a></li>
     </ul>
   </div>
+</div>
 </footer> <!--footer-->
 
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>

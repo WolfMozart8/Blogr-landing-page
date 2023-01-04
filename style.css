@@ -52,7 +52,7 @@ a {
     text-decoration: none;
 }
 p {
-    color: var(--gray);
+    color: var(--white);
 }
 h2 {
     color: var(--primary-dark);
@@ -82,27 +82,40 @@ h3 {
     background-color: transparent;
 }
 .button--no-bg a {
-    color: var(--gray);
+    color: #ffffffaa;
 
 }
 .button--white-bg {
-
     background-color: var(--white);
     font-weight: 600;
-
+}
+.button--white-bg:hover {
+    color: var(--white);
+    background-color: var(--primary-light);
 }
 .button--outline {
     border: 1px solid var(--white);
     background-color: transparent;
 }
+.button--outline:hover {
+    color: var(--primary);
+    background-color: var(--white);
+}
 .button--outline a {
     color: var(--white);
+}
+.button__div:hover {
+    cursor: pointer;
 }
 /* header */
 header {
     background: -465px / 284rem no-repeat url(./images/bg-pattern-intro-desktop.svg),
     linear-gradient(90deg, var(--gradient-light), var(--gradient-dark));
     border-radius: 0 0 0 100px;
+}
+header p,
+.button--no-bg {
+    color: #ffffffaa;
 }
 .nav {
     display: flex;
@@ -157,8 +170,32 @@ header {
     display: flex;
     gap: 10px;
 }
+/* menu */
+.links__main {
+    position: relative;
+}
+.links__list {
+    background-color: var(--white);
+    width: calc(100% + 30px);
+    padding: 15px;
+    list-style: none;
+    position: absolute;
+    top: 30px;
+    left: -12px;
+    border-radius: 10%;
+    box-shadow: 1px 2px 11px 2px var(--dark-gray);
+}
+.links__list a {
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+.links__list a:hover {
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
 /* main  */
-/* section 1 */
+/* section 1 and 3*/
 .container-big {
     margin-bottom: 185px;
 }
@@ -194,6 +231,16 @@ header {
     left: 50px;
     top: -153px;
 }
+.section-3 {
+    margin-top: 85px;
+}
+.img-laptop-div {
+    grid-column: 1 / 2;
+}
+.container-big__img img.img-laptop {
+    left: -442px;
+    top: -10px;
+}
 /* section 2 */
 .container-small {
     background: -95px -395px/800px no-repeat url(./images/bg-pattern-circles.svg),
@@ -218,4 +265,41 @@ header {
     left: -40px;
     top: -105px;
     width: 415px;
+}
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: var(--dark-blue);
+    color: var(--gray);
+    padding: 5% 25% 5% 15%;
+    border-radius: 0 100px 0 0;
+}
+footer p {
+    color: var(--white);
+    font-family: var(--ubuntu);
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+footer a {
+    color: var(--gray);
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer ul {
+    padding-left: 0;
+}
+footer ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.footer-links {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 70%;
 }
