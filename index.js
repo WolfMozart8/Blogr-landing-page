@@ -1,9 +1,14 @@
 const links = document.querySelectorAll(".link-target");
 const linkList = document.querySelectorAll(".links_ist");
 const menu = document.querySelector(".mobile-menu");
+const menuList = document.getElementById("mobile-menu");
 
 menu.addEventListener("click", () => {
+
+
     menu.classList.toggle("menu-enable");
+    menuList.classList.toggle("active");
+
 })
 
 links.forEach(e => {

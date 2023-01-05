@@ -38,6 +38,7 @@ body {
 h1 {
     font-size: 4.7rem;
     margin: 70px 0 0 0;
+    text-align: center;
 }
 .links__title,
 li a,
@@ -116,6 +117,13 @@ h3 {
 } */
 .button__div:hover {
     cursor: pointer;
+}
+.button__div a {
+    color: #ffffffaa;
+    font-weight: 600;
+}
+.button__div a:visited {
+    color: #ffffffaa;
 }
 /* menu */
 .icon-direction {
@@ -272,7 +280,7 @@ header p,
 }
 /* section 2 */
 .container-small {
-    background: -95px -395px/800px no-repeat url(./images/bg-pattern-circles.svg),
+    background: -112px -224px/570px no-repeat url(./images/bg-pattern-circles.svg),
     linear-gradient(90deg, var(--gradient-bg-verydark), var(--gradient-bg-dark));
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -333,7 +341,33 @@ footer ul li {
     width: 70%;
 }
 
+/* tablet */
+@media (max-width: 769px) {
+    .links__main {
+        margin-right: 0;
+    }
+    .join-us > .button__div {
+        width: auto;
+    }
+    .container-small__img img {
+        width: 245px;
+        top: 0;
+    }
+    .container-big__img img {
+        width: 640px;
+    }
+    .container-big__img img.img-laptop {
+        left: -395px;
+        top: 105px;
+    }
+}
+
+
+
 /* mobile */
+.mobile {
+    display: none;
+}
 .mobile-menu{
     background-image: url(./images/icon-hamburger.svg);
     background-repeat: no-repeat;
@@ -356,7 +390,7 @@ footer ul li {
     transition: background-image .1s;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
     .links,
     .join-us,
     .desktop {
@@ -369,10 +403,24 @@ footer ul li {
         padding: 10% 10%;
     }
     /* header */
+    header {
+        background: -295px -241px / 118rem no-repeat url(./images/bg-pattern-intro-mobile.svg),
+        linear-gradient(180deg, var(--gradient-light), var(--gradient-dark))
+    }
     /* nav */
     h1 {
         font-size: 3rem;
         text-align: center;
+    }
+    .button--gradient-bg {
+        color: var(--white);
+        background: linear-gradient(90deg, var(--gradient-light), var(--gradient-dark));
+    }
+    .join-us.mobile {
+        display: flex;
+        padding: 10% 20%  30px;
+        border-top: 1px solid gray;
+        flex-direction: column;
     }
     .sections {
         width: 100%;
@@ -383,10 +431,88 @@ footer ul li {
     .header__main p {
         text-align: center;
     }
-
+    /* menu */
+    .sections {
+        position: relative;
+    }
+    .mobile-menu-div {
+        position: absolute;
+        background-color: var(--white);
+        width: 80vw;
+        height: 80vh;
+        top: 65px;
+        box-shadow: 1px 2px 11px 2px var(--dark-gray);
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+    #mobile-menu {
+        display: none;
+        user-select: none;
+    }
+    #mobile-menu.active {
+        display: grid;
+    }
+    .links__list {
+        position: static;
+        display: none;
+        visibility: visible;
+        padding: 20px;
+        box-shadow: none;
+        background-color: #eeeeeeaa;
+        margin: 0 85px;
+        width: 240px;
+        border-radius: 10px;
+        
+    }
+    .links__list li {
+        text-align: center;
+        line-height: 2;
+    }
+    .list-enable {
+        display: block;
+    }
+    .links.mobile * {
+        margin: 0;
+    }
+    .links.mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 80%;
+        justify-content: space-evenly;
+    }
+    .links__main {
+        position: static;
+        flex-direction: column;
+    }
+    .links__main.link-target {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .links__main a {
+        color: var(--dark-gray);
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+    .mobile a.a-link {
+        color: var(--dark-blue);
+    }
+    .links__main p {
+        color: var(--dark-blue);
+        font-size: 1.7rem;
+    }
+    .links__main p:hover {
+        color: var(--dark-blue);
+    }
+    .join-us > .button__div {
+        width: 110px;
+    }
     /* main */
     .container-big {
-        margin-bottom: 40px;
+        margin-bottom: 270px;
     }
     .container-big__img {
         position: inherit;
@@ -405,7 +531,7 @@ footer ul li {
         position: inherit;
         top: 0;
         left: 0;
-        width: 140%;
+        width: 100%;
         translate: -66px;
     }
     .container-big__section {
@@ -440,6 +566,7 @@ footer ul li {
         flex-direction: column;
         align-items: center;
         padding-bottom: 40px;
+        margin-top: -240px;
     }
     footer .logo {
         margin: 85px 0;
