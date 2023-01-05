@@ -1,5 +1,10 @@
 const links = document.querySelectorAll(".link-target");
 const linkList = document.querySelectorAll(".links_ist");
+const menu = document.querySelector(".mobile-menu");
+
+menu.addEventListener("click", () => {
+    menu.classList.toggle("menu-enable");
+})
 
 links.forEach(e => {
     e.addEventListener("click", (link) => {
